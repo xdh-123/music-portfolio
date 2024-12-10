@@ -1,0 +1,236 @@
+/* 基础样式 */
+:root {
+    --shark: #242424;
+    --eerie-black: #1E1E1E;
+    --white: #FFFFFF;
+    --concrete: #F2F2F2;
+    --scarlet: #FF2D55;
+    --font-family-inter: 'Inter', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background: var(--shark);
+    font-family: var(--font-family-inter);
+    color: var(--white);
+  }
+  
+  /* 主容器 */
+  .desktop-1200 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  /* 导航栏 */
+  .navbar {
+    width: 100%;
+    background: var(--eerie-black);
+    padding: 20px 0;
+  }
+  
+  .navbar-1 {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
+  }
+  
+  .navbar-2 {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .tab {
+    text-decoration: none;
+    color: var(--concrete);
+    font-size: 16px;
+  }
+  
+  /* Hero区域 */
+  .hero {
+    width: 100%;
+    padding: 60px 0;
+  }
+  
+  .container-3 {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .text-2 {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .t_title-2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .t_subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--concrete);
+  }
+  
+  .hero-image {
+    margin-top: 40px;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  /* 特性区域 */
+  .features {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  .text-3 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .t_tagline {
+    color: var(--scarlet);
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .container-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .container {
+    background: var(--eerie-black);
+    padding: 30px;
+    border-radius: 12px;
+  }
+  
+  /* 音频播放器 */
+  audio {
+    width: 100%;
+    margin: 15px 0;
+  }
+  
+  /* 视频播放器 */
+  video {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* 统计区域 */
+  .stats {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .row-item {
+    padding: 20px;
+  }
+  
+  /* 页脚 */
+  .footer {
+    background: var(--eerie-black);
+    padding: 60px 0 40px;
+  }
+  
+  .footer-1 {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  .cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+  }
+  
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+    .t_title-2 {
+      font-size: 36px;
+    }
+    
+    .container-4 {
+      grid-template-columns: 1fr;
+    }
+    
+    .navbar-1 {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .stats .row {
+      grid-template-columns: 1fr;
+    }
+    
+    .t_title-2 {
+      font-size: 28px;
+    }
+  }
+  
+
+
+
+  /* 添加新的标题样式 */
+.feature-title {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif; /* 更艺术的字体 */
+    color: var(--white);
+    margin: 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.feature-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--concrete);
+    font-family: 'Cormorant Garamond', serif;
+    margin: 20px 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 作品容器样式优化 */
+.container {
+    padding: 40px;
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+    border-radius: 15px;
+    margin: 30px 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
